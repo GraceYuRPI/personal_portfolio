@@ -57,3 +57,29 @@ body {
   .about {
     margin: 5%;
   }
+
+  .experiences {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .col1 {
+    text-align: left;
+  }
+  .col2 {
+    text-align: right;
+    vertical-align: top;
+  }
+
+  .texts{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .spacer {
+    height: 15px;
+  }
+
+  .summary {
+    text-align: justify;
+  }
