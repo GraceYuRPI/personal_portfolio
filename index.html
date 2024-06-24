@@ -1,65 +1,188 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grace Yu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Plantin", serif}
+</style>
 </head>
-<body>
+<body class="w3-aeroblue w3-content" style="max-width:1600px">
 
-  <script src="interactive.js"></script>
-
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-<div class="sidebar">
-  <div class="prof_image">
-    <img src="IMG_9187.jpg" width = 90%>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-light-gray w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="IMG_9187.JPG" style="width:70%;" class="w3-round"><br><br>
+    <h4><b>Grace Yu</b></h4>
   </div>
-  <div class="about">
-    <h3>Zining (Grace) Yu</h3>
-    <p>Aeronautical Engineering and Mechanical Engineering Student at Rensselaer Polytechnic Institute </p>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Portfolio</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>About</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Contact</a>
+    <a href="GraceYu_resume_portfolio.pdf" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-black"><i class="w3-margin-right"></i>Resume</a>
   </div>
-  <a href="GraceYu_resume.pdf" download>Resume</a>
-  <a href = "mailto: zininggraceyu@gmail.com">Email</a>
-  <a class="active" href="index.html">Home</a>
-</div>
+</nav>
 
-<div class="content">
-  <div class="texts">
-    <div class="aboutme">
-      <h2>About Me</h2>
-      <p class="summary">Hi, my name is Grace, I am an aeronautical engineering and mechanical engineering major.I am especially interested in optimization in engineering - using both theory and data-driven methods. From my past experiences, I have also developed interests in automotive technology, precision control of mechanical systems, and design for assembly. My prior experience as an apprentice mechanic and the chassis/suspension manufacturing lead at Rensselaer Motorsport also makes me highly knowledgable with both internal combustion and electric-powered vehicles. I am currently seeking an internship for the spring or the summer of 2025, as a researcher or as a mechanical or aeronautical engineer.</p>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
     </div>
-  <h2>Experience</h2>
-  <table class="experiences" width=96%>
-    <tr>
-      <td class="col1"><b>Rensselaer Motorsport</b>
-        <ul>
-          <li>Team member (Aug. 2023 to Dec. 2023)</li>
-        <li>Chassis and Suspension manufacturing lead (Dec. 2023 to Present)</li>
-        <ul>
-          <li>Designed and manufactured various welding jigs for manufacturing the chassis and the suspension, including a full set of chassis jigs, suspension mount jigs, and welding fixtures for damper and bellcrank mounts. Significantly sped up the manufacturing of the spaceframe chassis and reduced tolerances from both human errors and warpage from welding.</li>
-          <li>Helped to coordinate the construction of corner assemblies, including suspension arms, rods, and hardware.</li>
-          <li>Built the motor test bench for the Drivetrain subsystem by welding together spare tube stocks and adapting the previous year’s motor mounts. </li>
-        </ul>
-        </ul>
-      </td>
-      <td class="col2">August 2023 to Present</td>
-    </tr>
-    <tr class="spacer"></tr>
-    <tr>
-      <td class="col1"><b>FIRST Tech Challenge</b>
-        <li>Team member on #8886, Saber Robotics (Sept. 2017 to April 2018)</li>
-        <li>Technical Director of #14316, Entradox Robotics (Sept. 2018 to March 2023)</li>
-      </td>
-      <td class="col2">Sept. 2016 to March 2023</td>
-    </tr>
-  </table>
-  <br>
-  <h2>Research</h2>
-  <h2>Projects</h2>
+  </header>
+  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="RM.html">
+        <img src="/RM/RM_thumbnail.jpg" alt="RM" style="width:100%" class="w3-hover-opacity">
+      </a>
+      <div class="w3-container w3-light-gray">
+        <p><b>Rensselaer Motorsport (FSAE)</b></p>
+        <p>We design and build electric racecars on an annual basis. I am the current Chassis-Suspension-Tires Lead, working primarily on the vehicle dynamics side of the team.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/CRC-3/CRC-thumbnail.png" alt="QRBP" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-light-gray">
+        <p><b>CRC-3 Vertical-Takeoff Fixed-Wing Aircraft </b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Wire Arc Additive Manufacturing and Sintering of YSZ Powders    </b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Machine Learning Based Cost Reduction of Airfoil Optimization</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Student on the Beamline</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>FIRST Robotics</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
 
+   <!-- Third Photo Grid-->
+   <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Damped Oscillation of a Sphere</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Monte-Carlo Model of the Scattering Pattern Due to Collisions of Spherical Objects</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Measurement of Single Slit Diffraction Pattern Using an Linear Actuator </b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
+    <h2><b>About Me</b></h2>
+    <p>Hi, my name is Grace, I am a student at Rensselear Polytechnic Institute, majoring in aeronautical and mechanical engineering. I am especially interested in numerical optimization techniques in engineering- using both theory and data-driven methods. I am also interested in the development of high-performance automotive technology, the control architecture of precision electromechanical systems, as well as understanding how our world fundamentally functions, be it from a particle or theoretical physics perspective. I am currently seeking an internship for the summer of 2025.</p>
+    
+    <p>
+      <a href="GraceYu_resume_portfolio.pdf">
+        <button class="w3-button w3-green w3-padding-large w3-margin-top w3-margin-bottom w3-hover-deep-orange">
+          <i></i>Download Resume
+        </button>
+      </a>
+    </p>
+    <hr>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-green">
+  <div class="w3-row-padding" id="contact">
+    <div class="w3-third">
+      <h3><b>Contact</b></h3>
+      <p>Please feel free to reach out to me via LinkedIn or by Email.</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3></h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="https://www.linkedin.com/in/grace-yu-00997a270/">LinkedIn</a></span><br>
+        </li> 
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="https://github.com/GraceYuRPI">Github</a></span><br>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3></h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large"><a mailto="zininggraceyu@gmail.com">Email</a></span><br>
+        </li> 
+        <li class="w3-padding-16">
+          <span class="w3-large"><a href="#portfolio">Back to Top</a></span><br>
+        </li> 
+      </ul>
+    </div>
+
+  </div>
+  </footer>
+  
+<!-- End page content -->
 </div>
-</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
 </html>
