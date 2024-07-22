@@ -285,6 +285,16 @@ hr{border:0;border-top:1px solid #F9F5FF;margin:20px 0}
   text-align: center;
 }
 
+.footer{
+  overflow: hidden;
+  margin: 0;
+}
+
+.embeded{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
